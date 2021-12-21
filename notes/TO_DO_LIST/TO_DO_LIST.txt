@@ -1,0 +1,26 @@
+Base game
+	- camera and resolution system
+		- most common aspect ratio -- 16:9
+		- scaling test
+	- font
+		- from sprite or included file or defaults?
+	- sprites
+		- may include font
+		- man hanging
+			- make it possible to customize?
+		- animated letters?
+			- twitchy, or colored (changing colors?) or misc text effect
+		- background and ui elements
+	- code
+		- have a controller check when a letter is pressed
+			- needs to check if it's correct
+				- if correct, positive feedback then commit letter
+				- if incorrect, negative feedback then draw part of hangmanner
+		- game over screen
+		- timer?
+			- not a good idea when it comes to multiplayer
+		- make word packs possible
+			- add word packs to included files, and have parser read word packs then load words from
+			  selected word packs
+				- make parser compatible with different sized word packs
+		
