@@ -7,6 +7,7 @@
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":0,},
     {"id":{"name":"font_and_string_measure","path":"scripts/font_and_string_measure/font_and_string_measure.yy",},"order":1,},
     {"id":{"name":"draw_text_functions","path":"scripts/draw_text_functions/draw_text_functions.yy",},"order":0,},
+    {"id":{"name":"haxxors","path":"notes/haxxors/haxxors.yy",},"order":1,},
     {"id":{"name":"camera_controller","path":"objects/camera_controller/camera_controller.yy",},"order":0,},
     {"id":{"name":"math_functions","path":"scripts/math_functions/math_functions.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
