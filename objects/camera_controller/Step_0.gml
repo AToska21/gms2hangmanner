@@ -1,5 +1,5 @@
 /// @description cheaters PC ONLY!!! ill make mobile l8er
-if(keyboard_check(vk_up)){
+if(debug_mode == true){
 	show_error("Something went wrong. Please don't cheat. Thank you. - The Devs", true);
 }
 // P.S. plan for using this when you get banned from the game
