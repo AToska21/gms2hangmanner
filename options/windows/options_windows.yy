@@ -12,7 +12,11 @@
   "option_windows_splash_screen": "${base_options_dir}/windows/splash/splash.png",
   "option_windows_use_splash": false,
   "option_windows_start_fullscreen": false,
+<<<<<<< HEAD
   "option_windows_allow_fullscreen_switching": true,
+=======
+  "option_windows_allow_fullscreen_switching": false,
+>>>>>>> d77fa3df309b6829d8860499530002ded377bc4d
   "option_windows_interpolate_pixels": false,
   "option_windows_vsync": true,
   "option_windows_resize_window": false,
@@ -28,7 +32,11 @@
   "option_windows_enable_steam": false,
   "option_windows_disable_sandbox": false,
   "option_windows_steam_use_alternative_launcher": false,
+<<<<<<< HEAD
   "option_windows_use_x64": false,
+=======
+  "option_windows_use_x64": true,
+>>>>>>> d77fa3df309b6829d8860499530002ded377bc4d
   "resourceVersion": "1.1",
   "name": "Windows",
   "tags": [],

@@ -20,7 +20,11 @@ Base game
 				- if incorrect, negative feedback then draw part of hangmanner
 					- play a sound and when the word is completed, you get a medal! in ranked matches. in unranked matches, you get a happy sound.
 		- game over screen
+<<<<<<< HEAD
 			- add basic animations that shows the hangmanner being crushed by a piano, etc. but dont "kill" him, or apple and google will be a pain to deal with.
+=======
+			- add basic animations that shows the hangmanner being crushed by a piano, etc. but dont "kill" him, or apple and goggle will be a pain to deal with.
+>>>>>>> d77fa3df309b6829d8860499530002ded377bc4d
 				- will they have a fit with a man "hanging" from a noose?
 		- timer?
 			- not a good idea when it comes to multiplayer
