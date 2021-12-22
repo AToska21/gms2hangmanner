@@ -14,7 +14,7 @@ if window_get_fullscreen() {
 }*/
 
 //Draws various debug info if debugging macro is set to true
-if debug_mode {
+if Debugging {
 	
 	//if window_get_fullscreen() {
 	
@@ -81,7 +81,6 @@ if debug_mode {
 	var debug_text_padding = 10;
 	var debug_x = debug_text_padding;
 	var debug_y = display_get_gui_height() - string_get_pix_h(text_string,debug_font) - debug_text_padding;
-		//if instance_exists(dialogue_controller) {if (dialogue_controller.speaker_id.y < (camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2)) {debug_y = 0;}}
 	
 	draw_text_outlined_ext(debug_x,debug_y,-1,-1,c_black,c_white,1,1,1,text_string,debug_font,fa_left,fa_top);
 	

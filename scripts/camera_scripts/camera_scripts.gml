@@ -1,5 +1,5 @@
 //camera scripts
-
+/*
 //Grabs view dimensions
 function camera_view_update(view_cam = view_camera[0]) {
 	
@@ -14,3 +14,4 @@ function camera_view_update(view_cam = view_camera[0]) {
 
 
 //FIX THIS FOR YYC PLEASE!!!
+//Added it directly to the camera object; should be fine now

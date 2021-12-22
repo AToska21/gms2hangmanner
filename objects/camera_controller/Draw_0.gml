@@ -1,9 +1,9 @@
 /// @description Draws a representation when Debugging
 
 //Sets it to invisible (alpha = 0) when out of debug mode
-image_alpha = (debug_mode ? 0.5 : 0);
+image_alpha = (Debugging ? 0.5 : 0);
 
-if debug_mode {
+if Debugging {
 	
 	//draws camera position
 	draw_circle_color(x,y,7,c_ltgray,c_ltgray,false);
