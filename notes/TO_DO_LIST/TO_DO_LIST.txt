@@ -1,0 +1,34 @@
+Base game
+	- camera and resolution system
+		- most common aspect ratio -- 16:9
+		- scaling test
+	- font
+		- from sprite or included file or defaults?
+	- sprites
+		- may include font
+		- man (~~hanging~~ removed) being crushed by piano. wait gms dosent have markdown...
+			- make it possible to customize?
+				- hell yeah
+					- I like the way you think
+		- animated letters?
+			- twitchy, or colored (changing colors?) or misc text effect
+		- background and ui elements
+	- code
+		- have a controller check when a letter is pressed
+			- needs to check if it's correct
+				- if correct, positive feedback then commit letter
+				- if incorrect, negative feedback then draw part of hangmanner
+					- play a sound and when the word is completed, you get a medal! in ranked matches. in unranked matches, you get a happy sound.
+		- game over screen
+			- add basic animations that shows the hangmanner being crushed by a piano, etc. but dont "kill" him, or apple and google will be a pain to deal with.
+				- will they have a fit with a man "hanging" from a noose?
+		- timer?
+			- not a good idea when it comes to multiplayer
+				- timer disabled on ranked mp but not local mp
+		- make word packs possible
+			- some word packs if approved by us, will be added to the official word pack server.
+			- to prevent "private servers" of wordpacks, encrypt every link in the code with base64 and some of it in another cipher.
+			- add word packs to included files, and have parser read word packs then load words from
+			  selected word packs
+				- make parser compatible with different sized word packs
+		

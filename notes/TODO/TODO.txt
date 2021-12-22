@@ -1,0 +1,5 @@
+- Create the base code of the game.
+- Compile it.
+- Add 2P mode.
+- Add leaderboards.
+- Add word packs.
