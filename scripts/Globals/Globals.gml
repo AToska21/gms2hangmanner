@@ -8,6 +8,7 @@ function global_init() {
 	global.gameresheight = 540;
 	
 	//word pack vars
+	global.wordpack_list = [];
 	global.chosen_wordpack = "";
 	global.wordpack_words = [];
 

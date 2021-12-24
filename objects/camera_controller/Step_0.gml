@@ -1,4 +1,5 @@
 /// @description cheaters PC ONLY!!! ill make mobile l8er
+/*
 if(debug_mode == true){
 	show_error("Something went wrong. Please don't cheat. Thank you. - The Devs", true);
 }

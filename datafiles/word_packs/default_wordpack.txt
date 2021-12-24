@@ -17,5 +17,4 @@ draw
 dream
 drive
 drop
-drug
 during

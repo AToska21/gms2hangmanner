@@ -1,5 +1,19 @@
 /// @description Code code code
 
+//state machine vars
+enum wordStates {
+	
+	STARTING,
+	WORDPACKCHOOSE,
+	WORDPACKCHOSEN,
+	WORDCHOOSE,
+	WORDCHOSEN,
+	PLAYING,
+	GAMEOVER
+	
+}
+game_state = wordStates.STARTING;
+
 //Loads chosen word pack
  //will most likely change as game is built; rn this is enough for testing
 #region
