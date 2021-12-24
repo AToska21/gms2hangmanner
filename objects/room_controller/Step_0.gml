@@ -19,17 +19,24 @@ switch(game_state) {
 		}
 		
 		//Loads available word packs and saves name to a readable list
-		//finds first wordpack
-		var file = file_find_first(WORDPACKDIRECTORY + "*.txt", fa_directory); //change to fa_readonly once files are read only
 		
 		//clears global holding wordpack list
 		global.wordpack_list = [];
 		
-		//fills in global with wordpack names
+		//finds first wordpack
+		var file = file_find_first(WORDPACKDIRECTORY + "*.txt",0);
+		
+		//fills in global with wordpack struct (holds name and file)
 		var i = 0;
 		while(file != "") {
 			
-			global.wordpack_list[i] = file_string_name(file);
+			global.wordpack_list[i] = {
+				
+				wordpack_name : file_string_name(file),
+				wordpack_file : file
+				
+			}
+			
 			file = file_find_next();
 			i++;
 			
@@ -37,8 +44,47 @@ switch(game_state) {
 		file_find_close();
 		
 		//moves to next state
-		game_state = wordStates.WORDCHOOSE;
+		game_state = wordStates.WORDPACKCHOOSE;
 		
+	break;
+	
+	case(wordStates.WORDPACKCHOOSE):
+	
+		
+	
+	break;
+	
+	case(wordStates.WORDPACKCHOSEN):
+	
+		
+	
+	break;
+	
+	case(wordStates.WORDCHOOSE):
+	
+		//note: may need to add another state machine here depending on game modes considered
+		
+		//game auto choses a random word
+		
+	
+	break;
+	
+	case(wordStates.WORDCHOSEN):
+	
+		
+	
+	break;
+	
+	case(wordStates.PLAYING):
+	
+		
+	
+	break;
+	
+	case(wordStates.GAMEOVER):
+	
+		
+	
 	break;
 	
 }
