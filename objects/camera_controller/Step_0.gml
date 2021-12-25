@@ -1,12 +1,5 @@
 /// @description cheaters PC ONLY!!! ill make mobile l8er
-<<<<<<< HEAD
-if Debugging {
-	if(keyboard_check_pressed(vk_alt)){
-		game_restart()
-	}
-}
-=======
->>>>>>> defa341751cd0c275bcc22a2751ce78abf94bcd3
+
 /*
 if(debug_mode == true){
 	show_error("Something went wrong. Please don't cheat. Thank you. - The Devs", true);
