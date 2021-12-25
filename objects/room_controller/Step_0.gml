@@ -58,6 +58,11 @@ switch(game_state) {
 		game_state = wordStates.WORDPACKCHOOSE;
 		wordpack_index = 0;
 		word_index = 0;
+		tries_left = MAXTRIES;
+		incorrect_letters = "";
+		correct_letters = "";
+		display_str = "";
+		global.chosenword = "";
 		game_win_lose = game.NONE;
 		
 	break;
