@@ -73,13 +73,17 @@ switch(game_state) {
 			repeat(string_length(global.chosenword)) {str += "_";}
 		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str,font,fa_center,-1);
 	
-		//draws selected word if debugging
+		//draws debug info
 		if(Debugging) {
 			
-			var xx = 5;
-			var yy = 5;
-			var str = "Selected word: " + global.chosenword;
-			draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,0.5,0.5,1,str,font,-1,-1);
+			var str =	"Selected word:      " + global.chosenword + "\n" +
+						"Incorrect letters:  " + incorrect_letters + "\n" +
+						"Correct letters:    " + correct_letters + "\n" +
+						"Keyboard string:    " + keyboard_string
+			
+						;
+			
+			draw_text_outlined_ext(5,5,-1,-1,outline_c,string_c,0.5,0.5,1,str,font,-1,-1);
 			
 		}
 	

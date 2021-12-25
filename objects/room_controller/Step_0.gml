@@ -47,10 +47,11 @@ switch(game_state) {
 		}
 		file_find_close();
 		
-		//moves to next state
+		//moves to next state while resetting vars
 		game_state = wordStates.WORDPACKCHOOSE;
 		wordpack_index = 0;
 		word_index = 0;
+		game_win_lose = game.NONE;
 		
 	break;
 	
@@ -116,7 +117,21 @@ switch(game_state) {
 	
 	case(wordStates.PLAYING):
 	
+		//checks if game is over
+		if(tries_left <= 0) {game_win_lose = game.LOSE; game_state = wordStates.GAMEOVER;}
+		else if(string_length(correct_letters) == string_length(global.chosenword)) {game_win_lose = game.WIN; game_state = wordStates.GAMEOVER;}
 		
+		//Handles tries
+		#region
+		
+		//formats keyboard string
+		if(string_length(keyboard_string) >= 1) {keyboard_string = string_upper(string_copy(keyboard_string,1,1));} //keeps attempted letter one letter long and capitalizes it
+		if(ord(keyboard_string) < 65) || (ord(keyboard_string) > 90) {keyboard_string = "";} //gets rid of anything that's not a capital letter
+		
+		//sorts keyboard string into correct or incorrect vars
+		
+		
+		#endregion
 	
 	break;
 	
