@@ -1,5 +1,12 @@
 /// @description State machine
 
+//restarts game
+if Debugging {
+	if(keyboard_check_pressed(vk_alt)){
+		game_restart()
+	}
+}
+
 if(alarm[0] > 0) {exit;} //prevents inputs while alarm is counting down
 
 //game logic state machine
@@ -119,7 +126,7 @@ switch(game_state) {
 	
 		//checks if game is over
 		if(tries_left <= 0) {game_win_lose = game.LOSE; game_state = wordStates.GAMEOVER;}
-		else if(string_length(correct_letters) == string_length(global.chosenword)) {game_win_lose = game.WIN; game_state = wordStates.GAMEOVER;}
+		else if(display_str == global.chosenword) {game_win_lose = game.WIN; game_state = wordStates.GAMEOVER;}
 		
 		//Handles tries
 		#region
@@ -129,7 +136,38 @@ switch(game_state) {
 		if(ord(keyboard_string) < 65) || (ord(keyboard_string) > 90) {keyboard_string = "";} //gets rid of anything that's not a capital letter
 		
 		//sorts keyboard string into correct or incorrect vars
+		if(keyboard_string != "") {
+			
+			for(var i = 1; i <= string_length(global.chosenword); i++;) {
+			
+				if(keyboard_string == string_char_at(global.chosenword,i)) {correct_letters += keyboard_string; keyboard_string = "";}
+				else if(i >= string_length(global.chosenword)) {incorrect_letters += keyboard_string; keyboard_string = ""; tries_left--;}
+			
+			}
 		
+		}
+		
+		//orders correct letters into display string
+		display_str = "";
+		repeat(string_length(global.chosenword)) {display_str += "_";}
+		for(var i = 1; i <= string_length(correct_letters); i++;) {
+			
+			repeat(string_count(string_char_at(correct_letters,i),global.chosenword)) {
+				
+				for(var j = 1; j <= string_length(global.chosenword); j++;) {
+				
+					if(string_char_at(correct_letters,i) == string_char_at(global.chosenword,j)) {
+						
+						display_str = string_delete(display_str,j,1);
+						display_str = string_insert(string_char_at(correct_letters,i),display_str,j);
+						
+					}
+				
+				}
+				
+			}
+			
+		}
 		
 		#endregion
 	

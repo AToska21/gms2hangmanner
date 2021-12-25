@@ -66,20 +66,20 @@ switch(game_state) {
 	
 	case(wordStates.PLAYING):
 	
-		//draws spaces for each letter in chosen word
+		//draws display string
 		var xx = room_width/2;
 		var yy = room_height/2;
-		var str = "";
-			repeat(string_length(global.chosenword)) {str += "_";}
-		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str,font,fa_center,-1);
+			
+		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,display_str,font,fa_center,-1);
 	
 		//draws debug info
 		if(Debugging) {
 			
-			var str =	"Selected word:      " + global.chosenword + "\n" +
+			var str =	"DEBUG INFO" + "\n" +
+						"Selected word:      " + global.chosenword + "\n" +
 						"Incorrect letters:  " + incorrect_letters + "\n" +
 						"Correct letters:    " + correct_letters + "\n" +
-						"Keyboard string:    " + keyboard_string
+						"Tries left - " + string(tries_left)
 			
 						;
 			
@@ -91,7 +91,14 @@ switch(game_state) {
 	
 	case(wordStates.GAMEOVER):
 	
-		
+		//draws game over message
+		var xx = room_width/2;
+		var yy = room_height/2;
+		var str = "";
+			if(game_win_lose = game.WIN) {str = "You did it!";}
+			else if(game_win_lose = game.LOSE) {str = "You lost.";}
+			
+		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str,font,fa_center,-1);
 	
 	break;
 	

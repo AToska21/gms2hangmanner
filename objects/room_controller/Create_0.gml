@@ -23,6 +23,7 @@ game_win_lose = game.NONE;
 tries_left = MAXTRIES; //the number of guesses player has left
 incorrect_letters = "";
 correct_letters = "";
+display_str = "";
 
 //misc vars
 input_delay = 10; //delay for inputs
