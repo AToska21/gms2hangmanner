@@ -145,7 +145,7 @@ switch(game_state) {
 			
 			for(var i = 1; i <= string_length(global.chosenword); i++;) {
 			
-				if(keyboard_string == string_char_at(global.chosenword,i)) {correct_letters += keyboard_string; keyboard_string = "";}
+				if(keyboard_string == string_char_at(global.chosenword,i)) {correct_letters += keyboard_string; keyboard_string = ""; break;}
 				else if(i >= string_length(global.chosenword)) {incorrect_letters += keyboard_string; keyboard_string = ""; tries_left--;}
 			
 			}

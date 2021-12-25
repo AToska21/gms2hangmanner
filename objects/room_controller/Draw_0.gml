@@ -98,7 +98,7 @@ switch(game_state) {
 			if(game_win_lose = game.WIN) {str = "You did it!";}
 			else if(game_win_lose = game.LOSE) {str = "You lost.";}
 			
-		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str,font,fa_center,-1);
+		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str+"\n\nAlt to restart.",font,fa_center,-1);
 	
 	break;
 	
