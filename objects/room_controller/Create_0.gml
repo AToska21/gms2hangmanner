@@ -1,5 +1,9 @@
 /// @description Code code code
 
+//sets window caption
+var caption_flavor = choose("Come hang out", "Hello");
+window_set_caption(Title + " - " + caption_flavor);
+
 //state machine vars
 enum wordStates {
 	
