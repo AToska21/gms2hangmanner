@@ -21,15 +21,12 @@
 //Word Packs(Inlcuded Files)//
 #macro WORDPACKDIRECTORY	working_directory + "word_packs/"
 
-//Text Box Defaults
-#macro TextBoxWidth			560
-#macro TextBoxHeight		140
-#macro GameDefaultFont		-1
-
 //Constants//
 //Object IDs
 #macro Player				noone
 #macro AlwaysActive			[camera_controller]
+//Player Constants
+#macro MAXTRIES				6
 //Debug Grid Vars
 #macro GridCellSize			32
 //Menus Vars

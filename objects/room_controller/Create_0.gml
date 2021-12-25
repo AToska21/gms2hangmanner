@@ -14,28 +14,11 @@ enum wordStates {
 }
 game_state = wordStates.STARTING;
 
-//Loads chosen word pack
- //will most likely change as game is built; rn this is enough for testing
-#region
+//misc vars
+input_delay = 10; //delay for inputs
+wordpack_index = 0; //index of selected word pack
+word_index = 0; //index of selected word within word pack
+tries_left = MAXTRIES; //the number of guesses player has left
 
-//grabs right file
-var wordpack_file = "";
-switch(global.chosen_wordpack) {
-	
-	default: wordpack_file = "default_wordpack.txt";
-	
-}
-
-//reads file and saves words
-global.wordpack_words = []; //clears global holding words array
-	//unencrypt here//
-var wordpack_file_open = file_text_open_read(WORDPACKDIRECTORY + wordpack_file);
-var i = 0;
-while (!file_text_eof(wordpack_file_open)) {
-	
-	global.wordpack_words[i++] = file_text_readln(wordpack_file_open);
-	
-}
-file_text_close(wordpack_file_open);
-
-#endregion
+//sets alarm (temp)
+alarm[0] = room_speed;

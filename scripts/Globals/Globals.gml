@@ -11,5 +11,6 @@ function global_init() {
 	global.wordpack_list = [];
 	global.chosen_wordpack = "";
 	global.wordpack_words = [];
+	global.chosenword = "";
 
 }
