@@ -1,7 +1,8 @@
 /// @description cheaters PC ONLY!!! ill make mobile l8er
-
-if(keyboard_check_pressed(vk_alt)){
-	game_restart()
+if Debugging {
+	if(keyboard_check_pressed(vk_alt)){
+		game_restart()
+	}
 }
 /*
 if(debug_mode == true){
