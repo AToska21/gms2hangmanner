@@ -95,8 +95,8 @@ switch(game_state) {
 		var xx = room_width/2;
 		var yy = room_height/2;
 		var str = "";
-			if(game_win_lose = game.WIN) {str = "You did it!";}
-			else if(game_win_lose = game.LOSE) {str = "You lost.";}
+			if(game_win_lose = game.WIN) {str = "You did it! Press ALT to restart";}
+			else if(game_win_lose = game.LOSE) {str = "You lost. The word was " + global.chosenword + " Press ALT to restart";}
 			
 		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str,font,fa_center,-1);
 	

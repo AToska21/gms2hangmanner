@@ -1,11 +1,11 @@
 /// @description State machine
 
 //restarts game
-if Debugging {
+// if Debugging {
 	if(keyboard_check_pressed(vk_alt)){
 		game_restart()
 	}
-}
+// }
 
 if(alarm[0] > 0) {exit;} //prevents inputs while alarm is counting down
 
@@ -127,7 +127,6 @@ switch(game_state) {
 		//checks if game is over
 		if(tries_left <= 0) {game_win_lose = game.LOSE; game_state = wordStates.GAMEOVER;}
 		else if(display_str == global.chosenword) {game_win_lose = game.WIN; game_state = wordStates.GAMEOVER;}
-		
 		//Handles tries
 		#region
 		
