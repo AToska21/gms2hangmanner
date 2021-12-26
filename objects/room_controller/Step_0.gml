@@ -58,6 +58,11 @@ switch(game_state) {
 		game_state = wordStates.WORDPACKCHOOSE;
 		wordpack_index = 0;
 		word_index = 0;
+		tries_left = MAXTRIES;
+		incorrect_letters = "";
+		correct_letters = "";
+		display_str = "";
+		global.chosenword = "";
 		game_win_lose = game.NONE;
 		
 	break;
@@ -139,7 +144,7 @@ switch(game_state) {
 			
 			for(var i = 1; i <= string_length(global.chosenword); i++;) {
 			
-				if(keyboard_string == string_char_at(global.chosenword,i)) {correct_letters += keyboard_string; keyboard_string = "";}
+				if(keyboard_string == string_char_at(global.chosenword,i)) {correct_letters += keyboard_string; keyboard_string = ""; break;}
 				else if(i >= string_length(global.chosenword)) {incorrect_letters += keyboard_string; keyboard_string = ""; tries_left--;}
 			
 			}
