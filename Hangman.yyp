@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"camera_scripts","path":"scripts/camera_scripts/camera_scripts.yy",},"order":3,},
     {"id":{"name":"room_controller","path":"objects/room_controller/room_controller.yy",},"order":1,},
+    {"id":{"name":"string_scripts","path":"scripts/string_scripts/string_scripts.yy",},"order":0,},
     {"id":{"name":"TO_DO_LIST","path":"notes/TO_DO_LIST/TO_DO_LIST.yy",},"order":0,},
     {"id":{"name":"Globals","path":"scripts/Globals/Globals.yy",},"order":1,},
     {"id":{"name":"Enums","path":"scripts/Enums/Enums.yy",},"order":2,},
@@ -56,6 +57,7 @@
     {"folderPath":"folders/Scripts/Maths.yy","order":2,"resourceVersion":"1.0","name":"Maths","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Draw Scripts.yy","order":3,"resourceVersion":"1.0","name":"Draw Scripts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Draw Scripts/Text.yy","order":1,"resourceVersion":"1.0","name":"Text","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/String Scripts.yy","order":4,"resourceVersion":"1.0","name":"String Scripts","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
