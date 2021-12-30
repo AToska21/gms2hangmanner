@@ -31,4 +31,4 @@ wordpack_index = 0; //index of selected word pack
 word_index = 0; //index of selected word within word pack
 
 //sets alarm (temp)
-alarm[0] = room_speed;
+alarm[0] = room_speed/2;

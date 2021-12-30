@@ -99,7 +99,7 @@ switch(game_state) {
 		
 		//moves to next state
 		game_state = wordStates.WORDCHOOSE;
-		alarm[0] = input_delay;
+		alarm[0] = input_delay*2;
 	
 	break;
 	
@@ -138,7 +138,7 @@ switch(game_state) {
 		#region
 		
 		//formats keyboard string
-		if(string_length(keyboard_string) >= 1) {keyboard_string = string_upper(string_copy(keyboard_string,1,1));} //keeps attempted letter one letter long and capitalizes it
+		if(string_length(keyboard_string) >= 1) {keyboard_string = string_upper(string_copy(keyboard_string,1,1));} //keeps guess one letter long and capitalizes it
 		if(ord(keyboard_string) < 65) || (ord(keyboard_string) > 90) {keyboard_string = "";} //gets rid of anything that's not a capital letter
 		if(string_count(keyboard_string,correct_letters) + string_count(keyboard_string,incorrect_letters) > 0) {keyboard_string = "";} //prevents duplicate guesses
 		
