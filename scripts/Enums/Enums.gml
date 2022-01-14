@@ -16,3 +16,10 @@ enum game {
 	LOSE
 	
 }
+
+//hangman skins
+enum hangmanSkins {
+	
+	DEFAULTSKIN
+	
+}

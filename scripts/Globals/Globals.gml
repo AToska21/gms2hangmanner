@@ -12,5 +12,8 @@ function global_init() {
 	global.chosen_wordpack = "";
 	global.wordpack_words = [];
 	global.chosenword = "";
+	
+	//gameplay vars
+	global.hangman_skins = [default_hangman_spr];
 
 }

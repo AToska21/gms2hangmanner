@@ -29,6 +29,7 @@ display_str = "";
 input_delay = 10; //delay for inputs
 wordpack_index = 0; //index of selected word pack
 word_index = 0; //index of selected word within word pack
+skin_index = hangmanSkins.DEFAULTSKIN;
 
 //sets alarm (temp)
 alarm[0] = room_speed/2;

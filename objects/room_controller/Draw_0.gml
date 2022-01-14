@@ -103,3 +103,16 @@ switch(game_state) {
 	break;
 	
 }
+
+//draws hanged man
+if(tries_left < MAXTRIES) {
+	
+	//hangman spr vars
+	var hm_x = 200;
+	var hm_y = 200;
+	var hm_scale = 2;
+	
+	//draws sprite
+	draw_sprite_ext(global.hangman_skins[skin_index],tries_left,hm_x,hm_y,hm_scale,hm_scale,0,c_white,1);
+	
+}

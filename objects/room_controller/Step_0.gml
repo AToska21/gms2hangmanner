@@ -124,6 +124,7 @@ switch(game_state) {
 	
 		//moves to next state after delay
 		game_state = wordStates.PLAYING;
+		keyboard_string = "";
 		alarm[0] = input_delay;
 	
 	break;
