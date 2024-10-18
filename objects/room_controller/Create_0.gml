@@ -1,7 +1,7 @@
 /// @description Code code code
 
 //sets window caption
-var caption_flavor = choose("Come hang out", "Hello");
+var caption_flavor = choose("Come hang out!", "Hello!", "I wonder what rope tastes like...", "i have been coding this for years", "xyden has gone missing", "Hello beta testers!", "I hope this game is atleast a bit successful...");
 window_set_caption(Title + " - " + caption_flavor);
 
 //state machine vars

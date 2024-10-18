@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Maths",
-    "path": "folders/Scripts/Maths.yy",
+  "$GMScript":"v1",
+  "%Name":"math_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"math_functions",
+  "parent":{
+    "name":"Maths",
+    "path":"folders/Scripts/Maths.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "math_functions",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

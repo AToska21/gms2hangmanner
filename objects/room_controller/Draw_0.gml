@@ -32,7 +32,7 @@ switch(game_state) {
 		//draws word pack list
 		var xx = room_width/2;
 		var yy = room_height/2;
-		var str = "Scroll to choose a word pack" + "\n\n" + global.wordpack_list[wordpack_index].wordpack_name;
+		var str = "Press enter to start with a default pack or scroll to pick a pack!" + "\n\n" + global.wordpack_list[wordpack_index].wordpack_name;
 		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str,font,fa_center,-1);
 	
 	break;
@@ -49,7 +49,7 @@ switch(game_state) {
 		//draws word selection string
 		var xx = room_width/2;
 		var yy = room_height/2;
-		var str = "Selecting a random word";
+		var str = "Selecting a random word...";
 		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str,font,fa_center,-1);
 	
 	break;
@@ -59,7 +59,7 @@ switch(game_state) {
 		//draws confirmation string
 		var xx = room_width/2;
 		var yy = room_height/2;
-		var str = "Word selected";
+		var str = "Word selected!";
 		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str,font,fa_center,-1);
 		
 	break;
@@ -98,7 +98,7 @@ switch(game_state) {
 			if(game_win_lose = game.WIN) {str = global.chosenword + "\nYou did it!";}
 			else if(game_win_lose = game.LOSE) {str = "You lost.\nThe word was " + global.chosenword + ".";}
 			
-		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str+"\n\nPress Alt to restart.",font,fa_center,-1);
+		draw_text_outlined_ext(xx,yy,-1,-1,outline_c,string_c,1,1,1,str+"\n\nPress Alt to play again.",font,fa_center,-1);
 	
 	break;
 	

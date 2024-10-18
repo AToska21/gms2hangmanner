@@ -1,0 +1,10 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"room_controller","order":1,"path":"objects/room_controller/room_controller.yy",},
+    {"name":"camera_scripts","order":3,"path":"scripts/camera_scripts/camera_scripts.yy",},
+    {"name":"Enums","order":2,"path":"scripts/Enums/Enums.yy",},
+    {"name":"font_and_string_measure","order":1,"path":"scripts/font_and_string_measure/font_and_string_measure.yy",},
+    {"name":"Globals","order":1,"path":"scripts/Globals/Globals.yy",},
+  ],
+}

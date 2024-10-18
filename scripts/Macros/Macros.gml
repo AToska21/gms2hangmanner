@@ -3,8 +3,8 @@
 //Meta Data//
 #macro GameVersion			GM_version
 #macro Title				game_display_name
-#macro Author1				"Xyden.Konos#4437"
-#macro Author2				"natsuki#4455" //A- WHAT ok fine //that's right, we're stuck together now mwahaha!
+#macro Author1				"@xyden.konos"
+#macro Author2				"@ssdrive" //A- WHAT ok fine //that's right, we're stuck together now mwahaha!
 #macro Debugging			true //adding macro again; YYC doesn't play nice with debug mode; plus this is a macro -- it can't be changed once compiled
 #macro Yes					true
 #macro No					false

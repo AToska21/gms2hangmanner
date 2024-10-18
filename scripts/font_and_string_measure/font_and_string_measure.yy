@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Text",
-    "path": "folders/Scripts/Draw Scripts/Text.yy",
+  "$GMScript":"v1",
+  "%Name":"font_and_string_measure",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"font_and_string_measure",
+  "parent":{
+    "name":"Text",
+    "path":"folders/Scripts/Draw Scripts/Text.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "font_and_string_measure",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
