@@ -33,9 +33,8 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"test_wordpack.txt","CopyToMask":-1,"filePath":"datafiles","name":"test_wordpack.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"test_wordpack.txt","CopyToMask":-1,"filePath":"datafiles/word_packs","name":"test_wordpack.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"_default_wordpack.txt","CopyToMask":3035461389054378222,"filePath":"datafiles/word_packs","name":"_default_wordpack.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"cuss_wordpack.txt","CopyToMask":-1,"filePath":"datafiles/word_packs","name":"cuss_wordpack.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
